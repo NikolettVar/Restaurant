@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+	background-image:url("./gallery/waves.jpg");
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat; /*stretches image to fit page, no repeating*/
+}
+
+
+#navbar{
+	width:100%;
+	height:150px;
+	
+}
+
+#navbar a img{
+    border-radius: 10%;
+    position: absolute;
+    left: 3%;
+    top:5%;
+    bottom:50%;
+    
+    width: 100px;
+    height: 100px;
+}
+
+nav ul li{
+	
+	list-style:none;
+	position:relative;
+	left:300px; /*moves links 300px right relative to their original position*/
+	top:75px;
+	background-color:#b3d9ff; 
+	
+	padding:5px 10px 5px 10px; /*applies padding to space out "buttons"/links*/
+	
+	text-align:center;
+	display:inline-block; /*allows display of all links in one line*/
+	
+	
+}
+
+nav ul li a{
+	text-decoration:none; /*removes underline from links*/
+	font-size:1.5em;
+}
+
+footer{
+	background-color: #b3d9ff;  
+    position: absolute;
+    bottom:0px;
+    left:0;
+    width:100%;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    position:fixed;
+}
+
+
+
+/*Styles for Contact page*/
+
+
+
+.contact-container1 { /* contact form*/
+	float:right;
+	width:40%;
+	
+	
+	margin-right:10%;
+	
+	position:relative;
+	top:100px;
+	
+	border-radius: 5px;
+	background-image:url("./gallery/leaf.jpg");
+	
+	justify-content:space-around;
+	align-items: center;
+	text-align:left;
+	padding: 10px;
+}
+h3{
+	text-align:center;
+	align-items:center;
+	font-size:2em;
+	color:#3c3752;
+} /*centering contact form header*/
+
+
+
+.contact-container2{ /* location and hours*/
+	float:left;
+	width:30%;
+	margin-left:10%;
+	
+	position:relative;
+	top:20px;
+	
+	border-radius: 5px;
+	background-image:url("./gallery/leaf.jpg");
+	
+	justify-content:space-around;
+	align-items: center;
+	text-align:center;
+	padding: 10px;
+}
+
+#location{
+	margin-bottom:10px;
+	
+}
+
+#hours{
+	margin-top:10px;
+	justify-content:center;
+	align-items: center;
+	text-align:center;
+	
+} 
+
+#myForm{
+	justify-content:space-around;
+	align-items: center;
+	text-align:center;
+}
+
+label{
+	font-size:medium;
+}
+
+
+th{
+	position:relative;
+	left:100px;
+	font-size:2em;
+	color:#3c3752;
+
+}
+
+td{
+	position:relative;
+	left:15px;
+}
+
+
+
+table,th,td{
+	justify-content:center;
+	align-items: center;
+	text-align:center;
+}

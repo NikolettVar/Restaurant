@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!-- HTML5 Doctype -->
+<html lang="en">  <!-- HTML document is in English -->
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="booking, reservation, dublin, fine dining, restaurant, food, blue, stag">
+    <meta name="description" content="The Blue Stag - The finest dining experience in Dublin City. Book a table now.">
+    <meta name="author" content="Kevin Kennedy">
+    <script src="https://kit.fontawesome.com/ef5c81af9d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bookingKK.css">
+    <script src="BookingPageKK2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!--[if lt IE 9]>
+    <script id="mfn-html5" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title> Book a table </title>
+</head>
+<body>    
+    <nav id="navbar">    
+        <!-- Logo -->
+        <a href="index.html" title="The Blue Stag"><img src="./Images/logo.png" alt="logo"></a>
+
+        <ul>
+            <!-- NAV bar -->
+            <li><a href="index.html" title="Home"><i class="fas fa-home"></i>  Home </a></li>
+            <li><a href="about.html" title="About Us"><i class="fas fa-info-circle"></i>  About Us </a></li>
+            <li><a href="menu.html" title="Menu"><i class="fas fa-utensils"></i>  Menu </a></li>               
+            <li><a href="contact.html" title="Contact"><i class="far fa-envelope"></i>  Contact </a></li>
+            <li><a href="#booking.html" title="Book a table" class="current"><i class="far fa-address-book"></i>  Book a table </a></li>
+            <li><a href="gallery.html" title="Gallery"><i class="fas fa-images"></i> Gallery </a></li>
+        </ul>       
+    </nav>
+
+<!-- Booking Form -->
+<div id="wrap">
+    <form action="#" id="bookingForm" onsubmit="validator()"> 
+        <div id="header"><h1>Book Your Table Now</h1></div>
+        <table id="table">
+            <tr><td>Please enter your name</td><td><input id="name" type="text" name="name"/></td></tr>
+            <tr><td>Please enter the number of people</td><td><input id="numberP" type="number" min="1" required name="numberPeople"/></td></tr>
+            <tr><td>Please enter the date of your reservation</td><td><input id="date" type="date" name="date"/></td></tr>
+            <tr><td>Please enter the time of your reservation (17:00- 20:30)</td><td><input min="17:00" max="20:30" id="time" type="time" name="time"/></td></tr>
+            <tr><td>Please enter your email address</td><td><input id="email" type="email" name="email" /></td></tr>
+            <tr><td>Please enter your phone number</td><td><input id="number" type="number" name="phoneNumber" /></td></tr>
+            <tr><td>Click here to reset:</td><td><input type="reset" name="Reset"/></td></tr>
+            <tr><td>Click here to Submit your reservation:</td><td><input type='submit' id='submit' value='submit'/></td></tr>
+        </table>				
+    </form>
+</div>
+<!-- Footer-->
+    <footer> The Blue Stag  &copy; 2020 </footer>
+</body>
+</html>

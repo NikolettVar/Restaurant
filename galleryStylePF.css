@@ -1,0 +1,41 @@
+/*Styles for Gallery page*/
+#galleryBody{
+	background-image:url("./gallery/wood.jpg");
+}
+.gallery{
+	margin-top:75px;
+	float:right; 
+	margin-right: 50px;
+	width:45%;
+}
+
+@media only screen and (max-width:720px){
+	.slider{
+		display:none;
+	} /*if the screen is smaller than 720px wide, the slideshow will not appear */
+}
+
+.slider{
+	margin-top:130px;
+	width:45%;
+	float:left;
+	margin-left:70px;
+	position: relative;
+	bottom:45px;
+}
+
+.flexbox{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items:center;
+	
+}
+
+.flexbox img{
+	border-radius:5px; /*gives rounded effect to image thumbnails*/
+	width:150px;
+	height:150px;
+	margin:0px 5px; /*gaps between images*/
+}
+

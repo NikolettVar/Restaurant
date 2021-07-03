@@ -1,0 +1,354 @@
+/*Author: Nikolett Varadi*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap'); /*Custom font used from GoogleFonts*/
+
+/*Universal styles, resets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+/* Styles for Home/index.html* page*/ 
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+/*Styles for top horizontal navigation bar, present on all pages*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul{ /*Styles for unordered list*/
+    list-style: none;
+    background: #3c3752;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.6s;
+}
+
+nav a img{ /*Styling for logo*/
+    border-radius: 10%;
+    overflow: hidden;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+}
+
+
+nav ul li{ /*Settings for list items*/
+    display: inline-block;
+    padding: 1rem;
+}
+
+nav ul li a{ /*Styles for anchor tags inside list*/
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 5px;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li a.current{
+    background-color: #605770;
+}
+
+/*Styles for secondary navigation bar*/
+
+.links{
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.links ul{
+    list-style: none;
+    background: #b9a5b0;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+.links ul li{
+    display: inline-block;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: #3c3752;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 8px;
+}
+
+.links ul li a:hover{
+    color: #fff;
+}
+
+/*Styles for main showcase area*/
+#showcase{
+    background-image: url('./Images/restaurant.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#showcase #intro{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3c3752;  
+    padding: 8px;
+    background-color: rgba(255,255,255,.6);
+    border: 1px solid #3c3752;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+#showcase #date{
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    color: #3c3752;
+    padding: 5px;
+    background-color: rgba(255,255,255,.6); 
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#showcase #intro h1{
+   font-size: 3rem;  
+   text-shadow: 2px 2px 5px  #605770;
+}
+
+
+#showcase #intro p{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-shadow: 2px 2px 3px  #605770;
+}
+
+.link{
+    margin-top: 30px;
+}
+
+#showcase .link a{ /*Styles for link buttons on Home page*/
+    text-decoration: none;
+    padding: 10px 5px;
+    background-color:  rgba(255,255,255,.6);
+    border-radius: 8px;
+    border: 1px solid #3c3752;
+    font-weight: bold;
+    margin: 5px;
+    color: #3c3752;
+}
+
+#showcase .link a:hover{
+    background-color:  rgba(255,255,255,.8);
+}
+
+
+/*Styles for bottom footer*/
+footer{
+    background-color: #3c3752;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 0.6em;
+    position: fixed;
+}
+
+/*Styles for About Us/about.html page*/
+
+section{
+    display: flex; /*Flexbox-bases layout*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+section h2{
+    font-size: 2rem;
+}
+
+section p{
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+}
+
+section#founder{
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('./Images/owner.jpg')no-repeat center center/cover;
+}
+
+section#history{
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('./Images/food.jpg')no-repeat center center/cover;
+}
+
+section#mission{
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('./Images/roast.jpg')no-repeat center center/cover;
+}
+
+section#testimonials{
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('./Images/fish.jpg')no-repeat center center/cover;
+}
+
+
+section#founder .founder{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3c3752;  
+    padding: 20px;
+    background-color: rgba(255,255,255,.6);
+    border: 1px solid #3c3752;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+section#history .history{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3c3752;  
+    padding: 20px;
+    background-color: rgba(255,255,255,.6);
+    border: 1px solid #3c3752;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+section#mission .mission{
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3c3752;  
+    padding: 20px;
+    background-color: rgba(255,255,255,.6);
+    border: 1px solid #3c3752;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+
+section#testimonials .testimonials{
+    position: absolute;
+    top: 350%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3c3752;  
+    padding: 20px;
+    background-color: rgba(255,255,255,.6);
+    border: 1px solid #3c3752;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+
+
+/* Media Queries to make Home/index.html more responsive*/
+@media(min-width:320px) and (max-width:480px){ /*Styling for smaller screens*/
+
+#showcase nav ul li{
+    display: inline-block;
+    padding: 0.5rem;  
+}
+
+#showcase nav a img{ /*Logo will not display on smaller screens*/
+    display: none;
+}
+
+#showcase #intro{ /*Reduced font sizes, padding and different positioning for smaller screens*/
+    padding: 10px;
+    top: 25%;
+}
+    
+#showcase #intro h1{
+    font-size: 1.5rem;  
+ }
+ 
+#showcase #intro p{
+     font-size: 1rem;
+     padding: 5px;
+ }
+
+ #showcase .link a{
+    padding: 5px;
+    font-size: 1rem;
+ }
+
+ /*About us page*/
+ section h2{
+    font-size: 1rem;
+}
+
+section p{
+    font-size: 0.8rem;
+    padding-bottom: 3px;
+}
+ 
+}
+
+@media(min-width:480px) and (max-width:1100px){ /*Styles for larger screens*/
+    #showcase #intro{
+        padding: 10px;
+    }
+
+    #showcase #intro h1{
+        font-size: 2rem;  
+     }
+
+     #showcase .link{
+         margin-top: 50px;
+     }
+}
+
+
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pandora Fok">
+    <script src="https://kit.fontawesome.com/ef5c81af9d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleNV.css">
+    <link rel="stylesheet" href="galleryStylePF.css">
+    <!--[if lt IE 9]>
+    <script id="mfn-html5" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	
+    <title>Gallery</title>
+</head>
+
+<body id="galleryBody" onload="imgCycle()"> 
+<!-- image slideshow starts on page loading-->
+    
+    <nav id="navbar">   
+        
+        <a href="index.html" ><img src="./Images/logo.png"  alt="logo"></a>
+
+        <ul>
+            <li><a href="index.html"> <i class="fas fa-home"></i> Home </a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us </a></li>
+            <li><a href="menu.html"> <i class="fas fa-utensils"></i> Menu </a></li>  
+            <li><a href="contact.html"><i class="far fa-envelope"></i> Contact </a></li>
+			<li><a href="booking.html"><i class="far fa-address-book"></i> Book a table </a></li>
+            <li><a href="#gallery.html" class="current"><i class="fas fa-images"></i> Gallery </a></li> 
+        </ul>       
+    </nav>
+	
+	<div class="slider">
+		<img src="./gallery/octopus.jpg" id="slide" height="450" width="550" alt="images" /> 
+		<!--image slider-->
+	</div>
+	
+	<div class="gallery"> <!--gallery div containing 3 flexboxes-->
+
+    <div class="flexbox" id="flex1">
+		 
+		<div><img src="./gallery/octopus.jpg" alt="octopus"></div>
+		<div><img src="./gallery/cheesecake.jpg" alt="cheesecake"></div>
+		<div><img src="./gallery/bar.jpg" alt="bar"></div>
+	</div>
+	
+	<div class="flexbox" id="flex2">
+		<div><img src="./gallery/salmon.jpg" alt="salmon"></div>
+		<div><img src="./gallery/beef.jpg" alt="beef"></div>
+		<div><img src="./gallery/hake.jpg" alt="hake"></div>
+	</div>
+	
+	<div class="flexbox" id="flex3">
+		<div><img src="./gallery/burger.jpg" alt="burger"></div>
+		<div><img src="./gallery/cocktail.jpg" alt="cocktail"></div>
+		<div><img src="./gallery/potatoes.jpg" alt="potatoes"></div>
+    </div>
+	
+	</div> <!-- end of gallery div-->
+
+    <footer> The Blue Stag  &copy; 2020 </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

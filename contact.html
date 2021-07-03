@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Contact </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Blue Stag - The finest dining experience in Dublin City. Contact us anytime.">
+	<meta name="keywords" content="Dining, Dublin, Restaurant, Food, Perrystown">
+	<meta name="author" content="Pandora Fok">
+	<script src="https://kit.fontawesome.com/ef5c81af9d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="contactPF.css">
+	<!--<link rel="stylesheet" href="contactNV.css">-->
+	<!--<link rel="stylesheet" href="ContactKevinKennedy.css">-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!--[if lt IE 9]>
+    <script id="mfn-html5" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 9]> 
+	<script src="http://css3-mediaqueries-	js.googlecode.com/svn/trunk/css3-	mediaqueries.js"></script> 
+    <![endif]-->
+</head>
+<body>
+    
+    <nav id="navbar">     
+        
+        <a href="index.html" title="The Blue Stag" ><img src="./Images/logo.png" alt="logo"></a>
+
+        <ul>
+            <li><a href="index.html" title="Home"><i class="fas fa-home"></i>  Home </a></li>
+            <li><a href="about.html" title="About Us"> <i class="fas fa-info-circle"></i> About Us </a></li>
+            <li><a href="menu.html" title="Menu"><i class="fas fa-utensils"></i> Menu </a></li>               
+            <li><a href="#contact.html" title="Contact" class="current"><i class="far fa-envelope"></i> Contact </a></li>
+            <li><a href="booking.html" title="Book a table"><i class="far fa-address-book"></i>  Book a table </a></li>
+            <li><a href="gallery.html" title="Gallery"><i class="fas fa-images"></i> Gallery </a></li>
+
+        </ul>       
+    </nav>
+
+    <div id="contactForm" class="contact-container1">
+	
+		<h3>Contact Us</h3>
+	
+		<form id="myForm" method="post" action="mailto:x20136901@student.ncirl.ie" > <!--Pandora's email -->
+		
+			<div>
+				<label>Name (*)</label>
+				<input type="text" name="name" placeholder="Please enter your name" size="30" />
+			</div>
+			
+			<div>
+				<label>Email  (*)</label>
+				<input type="email" name="email" placeholder="Please enter your email" size="30" />
+			</div>
+			
+			<div>
+				<label>Phone (*)</label>
+				<input type="tel" name="phone" placeholder="Please enter your contact number" size="30" />
+			</div>
+			
+			<div>
+				<label>Message (*)</label>
+				<textarea name="message" placeholder="Please enter your message or query here." rows="4" cols="40"></textarea>
+			</div>
+			
+			<br/><small><i>All fields marked * are mandatory.</i></small>
+			
+			<div>
+				<input type="submit" name="submit" value="Submit" onClick="contactValidation()" />
+			</div>
+			
+			
+		</form>
+  
+    </div>
+	
+	
+	
+	<div id="location" class="contact-container2">
+		<h3>Address</h3>
+		The Blue Stag Restaurant
+		<br/>28-30 Watery Lane
+		<br/>Perrystown
+		<br/>Dublin 15
+	</div>
+
+
+	
+	<div id="hours" class="contact-container2">
+		<table>
+			<thead>
+				<tr>
+					<th>Opening Hours</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Monday</td>
+					<td>12:00 to 21:00</td>
+				</tr>
+				
+				<tr>
+					<td>Tuesday</td>
+					<td>12:00 to 21:00</td>
+				</tr>
+				
+				<tr>
+					<td>Wednesday</td>
+					<td>12:00 to 21:00</td>
+				</tr>
+				
+				<tr>
+					<td>Thursday</td>
+					<td>12:00 to 21:00</td>
+				</tr>
+				
+				<tr>
+					<td>Friday</td>
+					<td>12:00 to 23:00</td>
+				</tr>
+				
+				<tr>
+					<td>Saturday</td>
+					<td>09:00 to 23:00</td>
+				</tr>
+				
+				<tr>
+					<td>Sunday</td>
+					<td>09:00 to 22:00</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+    
+	<footer> The Blue Stag  &copy; 2020 </footer>
+	
+	<script src="contact.js"></script>
+</body>
+</html>

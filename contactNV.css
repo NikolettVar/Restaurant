@@ -1,0 +1,275 @@
+/*Author: Nikolett Varadi*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap'); /*Custom font used from GoogleFonts*/
+
+/*Universal styles/reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    background-size: cover;
+    background: url('./Images/restaurant.jpg');
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul{
+    list-style: none;
+    background: #3c3752;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.6s;
+}
+
+nav a img{
+    border-radius: 10%;
+    overflow: hidden;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    padding: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 5px;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li a.current{
+    background-color: #605770;
+}
+
+
+footer{
+    background-color: #3c3752;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 0.6em;
+    position: fixed;
+}
+
+/*Styles for contact form*/
+.contact-container1{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 45%;
+    margin-top: 8px;
+    padding: 8px 5px;
+    background-color: #978ca2;
+    box-shadow: 5px 5px 2px #b9a5b0;
+    border: 1px solid #3c3752;
+    border-radius: 5px;
+  
+}
+
+.contact-container1 h3{
+    text-align: center;
+}
+
+.contact-container1 input{ /*Styles for all the input tags*/
+
+    width: 100%;  
+    color:#000;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;  
+    font-size: 1.2rem;
+}
+
+input:focus  {
+    border: 2px solid #3c3752;
+  }
+
+.contact-container1 textarea{
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+.contact-container1 textarea:focus{
+    border: 2px solid #3c3752;
+}
+
+.contact-container1 input[type="submit"]{
+    width: 100%;    
+    padding: 16px 32px;
+    background-color: #b9a5b0;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-container1 input[type="submit"]:hover{
+    background-color: #3c3752;
+}
+
+.contact-container2{
+    position: relative;
+}
+
+/*Styles for address*/
+#location{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 30%;
+    padding: 6px 20px;
+    background-color:  #b9a5b0;
+    background-image: linear-gradient(to top left, #fff,#978ca2);
+    box-shadow: 5px 5px 2px #b9a5b0;
+    border: 1px solid #3c3752;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+/*Styles for opening hours*/
+#hours{
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    width: 30%;
+    padding: 4px 8px;
+    background-color: #b9a5b0;
+    background-image: linear-gradient(to top left, #fff,#978ca2);
+    box-shadow: 5px 5px 2px #b9a5b0;
+    border: 1px solid #3c3752;
+    border-radius: 5px;    
+}
+
+#hours table{
+    margin: 0 8px;
+}
+
+#hours th{
+    font-size: 28px;
+    
+}
+
+@media(min-width:320px) and (max-width:600px){ /*Styling for smaller screens*/
+
+    nav ul li{
+        display: inline-block;
+        padding: 0.5rem;  
+    }
+    
+    nav a img{ /*Logo will not display on smaller screens*/
+        display: none;
+    }
+
+    
+    nav ul li a{ /*Smaller font size for small screens*/
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 3px;
+    }
+
+    .contact-container1{ /*Contact form shrinks on smaller sizes*/
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        width: 50%;   
+    }
+
+
+    .contact-container1 h3{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .contact-container1 label{
+        font-size: 1rem;
+    }
+    
+    .contact-container1 input{ /*Styles for all the input tags*/    
+        width: 90%;  
+        padding: 8px 15px;
+        cursor: pointer;  
+        font-size: 0.8rem;
+    }
+
+    
+    .contact-container1 textarea{
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .contact-container1 input[type="submit"]{
+        width: 100%;    
+        padding: 8px 16px;
+            
+    }
+
+    #location{
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        width: 30%;
+        padding: 3px 10px;     
+        font-size: 1rem;
+    }
+
+    #hours{
+        position: absolute;
+        top: 45%;
+        right:3%;
+        width: 40%;
+        padding: 2px 2px;
+        font-size:0.8rem;  
+    }
+
+    #hours table th{
+        font-size: 1rem;
+    }
+
+    #hours table td { /*Shrinks table size without loosing data*/
+        width:0.2%;
+        white-space: nowrap;
+        }
+    }
+
+
+
+
+

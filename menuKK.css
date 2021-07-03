@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
+/*Set Background image, resize Background image to cover entire container, set font*/
+body
+{
+	background-image: url(./Images/MenuBG3.jpeg); 
+	background-size:cover; /**/
+    font-family:'Open Sans', sans-serif; 
+    font-size:1.5rem;
+    line-height:1.6; 
+	margin-bottom:250px; 
+}
+
+/*set Container parameters*/
+.container
+{
+    width:100%;
+    height:100%;
+}
+
+/* Set navbar dimensions and stack order, set bar to fixed so it stays onj top of page when scrolling*/
+nav
+{
+    position:fixed;
+    top:0;
+    left:0; 
+    width:100%; 
+    z-index: 1; 
+}
+
+/* CSS for Navbar list/links, remvoe defualt stlyes, set colour and text position. Remove scrollbars  */
+nav ul
+{
+    list-style:none; 
+    background:#3c3752; 
+    color:#fff;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    text-align:center;
+    transition:0.5s;
+}
+
+/*css for logo* sate border radius for curved effect, set size and location - make position absolute so logo stays when page scrolls */
+nav a img
+{
+    border-radius: 10%;
+    overflow: hidden;
+    position: absolute;
+    left: 3%;
+    top:50%;
+    bottom:50%;
+    transform:translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+}
+
+/*use inline block to display navbar links next to each other horizontally*/
+nav ul li
+{
+    display:inline-block;
+    padding:1rem;
+
+}
+
+/*Set colour and styles for links in Navbar*/
+nav ul li a
+{
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.25rem;
+    padding: 5px;
+}
+
+/*Display white line while hovering over Navbar link*/
+nav ul li a:hover
+{
+    border-bottom:2px solid #fff;
+}
+
+/*Change background colour of navbar link which is currenlty active*/
+nav ul li a.current
+{
+    background-color: #605770;
+}
+
+/*Set colour and style to footer, fix it to bottom of page*/
+footer
+{
+    background-color: #3c3752;
+    position: absolute;
+    bottom:0px;
+    left:0;
+    width:100%;
+    color: #fff;
+    text-align: center;
+    font-size: 0.6em;
+    position:fixed;
+	clear:both;
+}
+
+/*Position Table, set colours and styles*/
+#table	
+{	
+	transform: translateY(20%);
+	text-align:center;
+	margin:auto;
+	background-color:white;
+	border: 3px solid gold;
+	padding:75px;
+}
+
+/*Set size and style for header*/
+#h1
+{
+		font-size:38px;
+		font-style: italic;
+}
+
+/*set style for header*/
+th
+{	
+	font-weight:bold;
+	height:70px;
+}
+
+/*Set position, size and style*/
+#Allergens
+{
+	margin:auto;
+	text-align:center;
+    transform:translateY(70%);
+    color: black;  
+    padding: 20px;
+    background-color: white;
+    border: 3px solid gold;
+	width:1000px;
+}
+
+/* Media Queries*/
+/*define changes to occur depending on screen size*/
+@media(min-width:320px) and (max-width:480px){
+
+#showcase nav ul li{
+    display:inline-block;
+    padding:0.5rem;  
+}
+
+#showcase nav ul a img{
+    display:none;
+}
+#table 
+{
+width: 360px;
+}
+}
+
+@media(min-width:480px) and (max-width:1100px){
+
+#table 
+{
+width: 900px;
+}
+}
+

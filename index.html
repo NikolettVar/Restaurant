@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Home </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Blue Stag - The finest dining experience in Dublin City.">
+    <meta name="keywords" content="fine dining, restaurant, food, blue, stag, dublin, ireland, menu, about, booking, table, gallery, contact">
+    <meta name="author" content="Nikolett Varadi">
+    <script src="https://kit.fontawesome.com/ef5c81af9d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleNV.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!--[if lt IE 9]>
+    <script id="mfn-html5" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 9]> 
+	<script src="http://css3-mediaqueries-	js.googlecode.com/svn/trunk/css3-	mediaqueries.js"></script> 
+    <![endif]-->
+   
+</head>
+<body>
+    <div class ="container">
+        <div id="showcase">
+            <div id="date"></div> <!--displays today's date, using JS-->
+
+            <nav>       <!--Same Navigation bar on all pages-->
+
+                <a href="index.html" title="The Blue Stag" ><img src="./Images/logo.png" alt="logo"></a> <!--Logo-->
+
+                <ul> <!--using icons for a professional look-->
+                    <li><a href="#index.html" title="Home" class="current"> <i class="fas fa-home"></i> Home </a></li>
+                    <li><a href="about.html" title="About Us"> <i class="fas fa-info-circle"></i> About Us </a></li>
+                    <li><a href="menu.html" title="Menu"><i class="fas fa-utensils"></i>  Menu </a></li>               
+                    <li><a href="contact.html" title="Contact"><i class="far fa-envelope"></i> Contact </a></li>
+                    <li><a href="booking.html" title="Book a table"><i class="far fa-address-book"></i>  Book a table </a></li>
+                    <li><a href="gallery.html" title="Gallery"> <i class="fas fa-images"></i> Gallery </a></li>
+                </ul>       
+            </nav>
+
+            <div id="intro"> <!--Greeting and motto with animation to grab users' attention-->
+                <h1>Welcome to The Blue Stag!</h1>
+                <p> Finest dining in town. </p>
+            </div>
+
+            <div class="link"> <!--Links to Menu and Book a table pages-->
+                <a href="menu.html" title="Go to Menu">Browse menu</a>
+                <a href="booking.html" title="Go to Book a table">Book a table</a>
+            </div>
+        </div> 
+
+        <footer> The Blue Stag  &copy; 2020 </footer>  <!--Same footer on all pages-->
+    </div>
+
+    <script src="mainNV.js"></script>
+</body>
+</html>

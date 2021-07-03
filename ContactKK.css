@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*Set font, set background image to stretch across browser window and not repeat or tile*/
+body
+{
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+	background-image: url('./Images/Stag1.jpeg');
+	background-repeat:no repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin:0;	
+}
+
+/*set nav bar element tot eh width of the screen and fixed its postion*/
+nav
+{
+    position:fixed; 
+    width:100%;
+}
+/*Set padding for links at top of page, hid scroll bar, allign text to center of screen*/
+nav ul
+{
+    padding:15px;
+    margin:0;
+    overflow:hidden;
+    text-align:center;
+}
+
+/*fix position of logo link in corener of page*/
+nav a img
+{    
+    overflow: hidden;
+    position: absolute;
+    left: 2%;
+    width: 70px;
+    height: 70px;
+}
+/*When cursor hovers on logo link add white a border and shrink image by size of padding*/
+nav ul a img:hover
+{
+	padding: 5px;
+	border:2px solid #fff;
+}
+/* Display link in horizontal line with padding between*/
+nav ul li
+{
+    display:inline-block;
+    padding:20px;
+
+}
+/*Remove defauklt text decoration from links, set colour and font style*/
+nav ul li a
+{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    font-size:28px;
+    padding: 5px;
+}
+
+/*Set white border to appear when cursor hovers over link in nav bar*/
+nav ul li a:hover
+{
+    border:2px solid white;
+}
+
+/*Postion fotter at bootm of page, clear DIvs above and d not move*/
+
+footer
+{
+    position: absolute;
+    bottom:0px;
+    left:0;
+    width:100%;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+	clear:both;
+}
+
+.contact-container1
+{	
+
+	position: absolute;
+	left:15%;
+	top:15%;
+    text-align:center;
+    background-color: rgba(255, 255, 255,.7);
+    border: 3px solid silver;
+    border-radius: 30px;
+    font-weight: bold;
+	padding:35px;
+	width:35%;
+	overflow: auto;
+}
+    
+    
+/*style divs with location and hours, set size and colour, opacity and borders*/
+
+.contact-container2
+{	
+	position:fixed;
+	overflow: auto;
+	width:20%;
+    text-align:center;
+    background-color: rgba(255, 255, 255,.7);
+    border: 3px solid silver;
+    border-radius: 30px;
+    font-weight: bold;
+	padding:25px;
+}
+/*set psotion for Hours Div*/
+#hours{
+
+	left:57%;
+ 	top:12%;
+	min-width:330px;
+	min-height:200px;
+}
+/*set psotion for Location Div*/
+#location
+{
+
+	top:50%;
+	left:57%;
+	min-width:330px;
+	min-height:200px;
+}
+
+/*set styles for input fields in form*/
+input{
+
+	background-color: rgba(255, 255, 255,.7);
+	padding:12px 12px 12px;
+	cursor:pointer;
+	width: 75%;
+	float: right;
+}
+/*set styles for text area*/
+textarea{
+	padding:12px;
+	float:right;
+	resize: none;
+	cursor:pointer;
+	width:75%;
+	border: black solid 2px;
+	
+}
+label 
+{
+
+	padding:12px;
+	display: block;
+}
+/*change submit button to brown when cursor hover above*/
+input[type=submit]:hover {
+  background-color: brown;
+}
+
